@@ -1,0 +1,17 @@
+{% extends "AGENDA/base.html" %}
+
+{% block content %}
+<h1>AGENDA</h1>
+<ul>
+{% for agenda in agenda %}
+ <li><strong>Nombre:</strong> {{ agenda.nombre }}
+ <strong>Apellido:</strong> {{ agenda.apellido }}
+ <strong>Ci:</strong> {{ agenda.ci }}
+ <strong>Numero de Telefono:</strong> {{ agenda.nro_tel }}
+ <strong>Correo:</strong> {{ agenda.correo }}</li>
+
+{% endfor %}
+</ul>
+
+
+{% endblock content %}
